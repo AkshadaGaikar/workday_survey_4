@@ -1,5 +1,5 @@
 view: survey_4 {
-  sql_table_name: `WORKDAY_SURVEY.survey5` ;;
+  sql_table_name: `WORKDAY_SURVEY.Survey5` ;;
 
   dimension: employee_id {
     type: string
@@ -18,10 +18,9 @@ view: survey_4 {
     sql: ${TABLE}.SurveyName ;;
   }
 
-
-
   measure: count {
     type: count
     drill_fields: [survey_name]
   }
+
 }
